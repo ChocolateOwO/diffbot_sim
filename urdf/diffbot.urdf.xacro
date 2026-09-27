@@ -163,10 +163,10 @@
       <ray>
         <scan>
           <horizontal>
-            <samples>360</samples>
+            <samples>684</samples>
             <resolution>1</resolution>
             <min_angle>-3.14159265</min_angle>
-            <max_angle>3.14159265</max_angle>
+            <max_angle>3.13240665</max_angle>
           </horizontal>
         </scan>
         <range>
@@ -215,6 +215,7 @@
       <max_wheel_acceleration>3.0</max_wheel_acceleration>
 
       <command_topic>cmd_vel</command_topic>
+      <odometry_source>1</odometry_source>
       <publish_odom>true</publish_odom>
       <publish_odom_tf>true</publish_odom_tf>
       <publish_wheel_tf>false</publish_wheel_tf>

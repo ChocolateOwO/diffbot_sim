@@ -16,6 +16,7 @@ setup(
         (os.path.join('share', package_name, 'launch'), glob('launch/*.launch.py')),
         (os.path.join('share', package_name, 'urdf'), glob('urdf/*.xacro')),
         (os.path.join('share', package_name, 'worlds'), glob('worlds/*.world')),
+        (os.path.join('share', package_name, 'config'), glob('config/*.yaml')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -32,6 +33,8 @@ setup(
         'console_scripts': [
             'move_robot = diffbot_sim.move_robot:main',
             'wasd_teleop = diffbot_sim.wasd_teleop:main',
+            'lidar_recorder = diffbot_sim.lidar_recorder:main',
+            'waypoint_driver = diffbot_sim.waypoint_driver:main',
         ],
     },
 )
